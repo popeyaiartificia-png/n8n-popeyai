@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn about POPEY AI - India's Leading Agentic AI & n8n Automation Company. Our mission, team, and values.">
+    <title>About Us | POPEY AI - Our Story & Mission</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .mission-vision-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--spacing-lg);
+        }
+
+        .mission-card {
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-xl);
+            transition: var(--transition-normal);
+        }
+
+        .mission-card:hover {
+            border-color: var(--color-accent);
+        }
+
+        .mission-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(196, 241, 53, 0.1);
+            border-radius: var(--radius-lg);
+            font-size: 1.75rem;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--spacing-lg);
+        }
+
+        .value-card {
+            text-align: center;
+            padding: var(--spacing-lg);
+        }
+
+        .value-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto var(--spacing-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(196, 241, 53, 0.2), rgba(196, 241, 53, 0.05));
+            border-radius: var(--radius-full);
+            font-size: 2rem;
+        }
+
+        @media (max-width: 768px) {
+
+            .mission-vision-grid,
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-logo">
+                <img src="images/logo.png" alt="POPEY AI" style="height: 40px;">
+            </a>
+            <div class="navbar-menu">
+                <ul class="navbar-links" id="navLinks">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html" class="active">ABOUT</a></li>
+                    <li>
+                        <a href="services.html" class="has-dropdown">SERVICES</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ai-services.html">Core AI & IT</a></li>
+                            <li><a href="services.html#ai-videos">AI Videos</a></li>
+                            <li><a href="services.html#animation">Animation</a></li>
+                            <li><a href="services.html#vfx">VFX & Motion</a></li>
+                            <li><a href="services.html#editing">Video Editing</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ai-services.html">AI SERVICES</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary navbar-cta">Register Here</a>
+                <button class="navbar-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>About <span class="text-accent">POPEY AI</span></h1>
+            <p>India's Leading Agentic AI & n8n Automation Company</p>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="section">
+        <div class="container">
+            <div class="mission-vision-grid">
+                <div class="mission-card animate-on-scroll">
+                    <div class="mission-icon">🎯</div>
+                    <h3>Our Mission</h3>
+                    <p>To give businesses a new kind of digital workforce — self-learning, context-aware, multi-agent
+                        systems powered by cutting-edge AI reasoning and the scalability of the n8n automation
+                        framework.</p>
+                </div>
+                <div class="mission-card animate-on-scroll delay-1">
+                    <div class="mission-icon">🔭</div>
+                    <h3>Our Vision</h3>
+                    <p>To be India's most trusted AI automation company, enabling businesses of all sizes to harness
+                        the power of intelligent automation and achieve unprecedented efficiency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section class="section" style="background: var(--color-bg-secondary);">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image slide-in-left">
+                    <img src="images/home/about-thumb.png" alt="About POPEY AI">
+                </div>
+                <div class="about-content slide-in-right">
+                    <h2>Who We <span class="text-accent">Are</span></h2>
+                    <p>POPEY AI is a team of passionate AI engineers, automation specialists, and creative
+                        professionals dedicated to transforming how businesses operate.</p>
+                    <p>We combine deep technical expertise with creative excellence to deliver solutions that not only
+                        work flawlessly but also look stunning.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="about-feature-icon">✓</div>
+                            <span>Expert AI Engineers</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">✓</div>
+                            <span>n8n Automation Specialists</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">✓</div>
+                            <span>Creative Video Team</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">✓</div>
+                            <span>24/7 Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="text-accent">Values</span></h2>
+                <p>The principles that guide everything we do</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon">💡</div>
+                    <h4>Innovation</h4>
+                    <p>We constantly push boundaries and explore new technologies to deliver cutting-edge solutions.</p>
+                </div>
+                <div class="value-card animate-on-scroll delay-1">
+                    <div class="value-icon">🤝</div>
+                    <h4>Partnership</h4>
+                    <p>We treat every client as a partner, invested in their success as much as our own.</p>
+                </div>
+                <div class="value-card animate-on-scroll delay-2">
+                    <div class="value-icon">⭐</div>
+                    <h4>Excellence</h4>
+                    <p>We never compromise on quality, delivering excellence in every project we undertake.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Work With Us Section -->
+    <section class="section why-choose" style="background: var(--color-bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Work With <span class="text-accent">Us</span>?</h2>
+            </div>
+            <div class="why-choose-grid">
+                <div class="why-choose-card animate-on-scroll">
+                    <div class="why-choose-icon">🧠</div>
+                    <h4>AI Expertise</h4>
+                    <p>Deep expertise in AI, machine learning, and automation technologies</p>
+                </div>
+                <div class="why-choose-card animate-on-scroll delay-1">
+                    <div class="why-choose-icon">⚡</div>
+                    <h4>n8n Specialists</h4>
+                    <p>Certified experts in n8n workflow automation</p>
+                </div>
+                <div class="why-choose-card animate-on-scroll delay-2">
+                    <div class="why-choose-icon">🎨</div>
+                    <h4>Creative Excellence</h4>
+                    <p>Award-winning creative team for video and content</p>
+                </div>
+                <div class="why-choose-card animate-on-scroll delay-3">
+                    <div class="why-choose-icon">🇮🇳</div>
+                    <h4>India-Based</h4>
+                    <p>Cost-effective solutions with global quality standards</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container" style="text-align: center;">
+            <h2>Ready to <span class="text-accent">Get Started</span>?</h2>
+            <p style="max-width: 600px; margin: 0 auto var(--spacing-lg);">Let's discuss how we can help transform your
+                business with AI-powered solutions.</p>
+            <div class="cta-buttons" style="justify-content: center;">
+                <a href="contact.html" class="btn btn-primary ripple">Contact Us</a>
+                <a href="services.html" class="btn btn-outline">View Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="navbar-logo">
+                        <img src="images/logo.png" alt="POPEY AI" style="height: 40px;">
+                    </a>
+                    <p>India's Leading Agentic AI & n8n Automation Company. Human Intelligence, Outsourced. AI-Powered,
+                        Delivered.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="YouTube">▶</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="ai-services.html">AI Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="ai-services.html">Core AI & IT</a></li>
+                        <li><a href="services.html#ai-videos">AI Videos</a></li>
+                        <li><a href="services.html#animation">Animation</a></li>
+                        <li><a href="services.html#vfx">VFX & Motion</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li>📧 contact@popeyai.com</li>
+                        <li>📞 +91 XXXXX XXXXX</li>
+                        <li>📍 India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 POPEY AI. All rights reserved.</p>
+                <p>Designed with 💚 by POPEY AI</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact POPEY AI - Get in touch with India's Leading Agentic AI & n8n Automation Company.">
+    <title>Contact Us | POPEY AI - Get in Touch</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-xl);
+        }
+
+        .contact-form {
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-xl);
+        }
+
+        .form-group {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: var(--spacing-xs);
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: var(--spacing-sm) var(--spacing-md);
+            background: var(--color-bg-primary);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            color: var(--color-text-primary);
+            font-size: 1rem;
+            transition: var(--transition-normal);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--color-accent);
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+        }
+
+        .contact-info-card {
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-lg);
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-md);
+            transition: var(--transition-normal);
+        }
+
+        .contact-info-card:hover {
+            border-color: var(--color-accent);
+        }
+
+        .contact-info-icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(196, 241, 53, 0.1);
+            border-radius: var(--radius-md);
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .contact-info-content h4 {
+            margin-bottom: var(--spacing-xs);
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-logo">
+                <img src="images/logo.png" alt="POPEY AI" style="height: 40px;">
+            </a>
+            <div class="navbar-menu">
+                <ul class="navbar-links" id="navLinks">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li>
+                        <a href="services.html" class="has-dropdown">SERVICES</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ai-services.html">Core AI & IT</a></li>
+                            <li><a href="services.html#ai-videos">AI Videos</a></li>
+                            <li><a href="services.html#animation">Animation</a></li>
+                            <li><a href="services.html#vfx">VFX & Motion</a></li>
+                            <li><a href="services.html#editing">Video Editing</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ai-services.html">AI SERVICES</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary navbar-cta">Register Here</a>
+                <button class="navbar-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get in <span class="text-accent">Touch</span></h1>
+            <p>Have a project in mind? Let's discuss how we can help transform your business</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form slide-in-left">
+                    <h3 style="margin-bottom: var(--spacing-lg);">Send us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="ai-chatbots">AI Chatbots</option>
+                                <option value="workflow-automation">Workflow Automation</option>
+                                <option value="ai-videos">AI Video Generation</option>
+                                <option value="animation">2D/3D Animation</option>
+                                <option value="vfx">VFX & Motion Graphics</option>
+                                <option value="video-editing">Video Editing</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" required
+                                placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary ripple" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info slide-in-right">
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">📧</div>
+                        <div class="contact-info-content">
+                            <h4>Email Us</h4>
+                            <p>contact@popeyai.com</p>
+                            <p style="font-size: 0.875rem; color: var(--color-text-secondary);">We'll respond within 24
+                                hours</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">📞</div>
+                        <div class="contact-info-content">
+                            <h4>Call Us</h4>
+                            <p>+91 XXXXX XXXXX</p>
+                            <p style="font-size: 0.875rem; color: var(--color-text-secondary);">Mon-Sat, 9AM-6PM IST</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">📍</div>
+                        <div class="contact-info-content">
+                            <h4>Location</h4>
+                            <p>India</p>
+                            <p style="font-size: 0.875rem; color: var(--color-text-secondary);">Serving clients
+                                worldwide
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">💬</div>
+                        <div class="contact-info-content">
+                            <h4>Social Media</h4>
+                            <div style="display: flex; gap: var(--spacing-sm); margin-top: var(--spacing-xs);">
+                                <a href="#" class="btn btn-outline"
+                                    style="padding: var(--spacing-xs) var(--spacing-sm);">LinkedIn</a>
+                                <a href="#" class="btn btn-outline"
+                                    style="padding: var(--spacing-xs) var(--spacing-sm);">Twitter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section" id="call" style="background: var(--color-bg-secondary);">
+        <div class="container" style="text-align: center;">
+            <h2>Prefer to <span class="text-accent">Talk</span>?</h2>
+            <p style="max-width: 600px; margin: 0 auto var(--spacing-lg);">Schedule a free consultation call with us
+                to discuss your project requirements in detail.</p>
+            <div class="cta-buttons" style="justify-content: center;">
+                <a href="#" class="btn btn-primary ripple">Schedule a Call</a>
+                <a href="services.html" class="btn btn-outline">View Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="navbar-logo">
+                        <img src="images/logo.png" alt="POPEY AI" style="height: 40px;">
+                    </a>
+                    <p>India's Leading Agentic AI & n8n Automation Company. Human Intelligence, Outsourced. AI-Powered,
+                        Delivered.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="YouTube">▶</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="ai-services.html">AI Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="ai-services.html">Core AI & IT</a></li>
+                        <li><a href="services.html#ai-videos">AI Videos</a></li>
+                        <li><a href="services.html#animation">Animation</a></li>
+                        <li><a href="services.html#vfx">VFX & Motion</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li>📧 contact@popeyai.com</li>
+                        <li>📞 +91 XXXXX XXXXX</li>
+                        <li>📍 India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 POPEY AI. All rights reserved.</p>
+                <p>Designed with 💚 by POPEY AI</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
